@@ -128,11 +128,19 @@ button{
 }
 
 .icon {
-    margin: 50px auto 5px auto;
-    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.icon-p {
     color: #595f77;
-    font-style: normal;
-    font-weight: bold;
+    margin:0;
+    padding-left: 8px;
+    letter-spacing: 0;
+    font-weight: 700;
 }
 
 .icon-overview {
@@ -146,10 +154,10 @@ button{
 .main-box h2 {
     font-size: 3rem;
     margin-bottom: 4px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.main-box p {
+.main-box-p {
     color: #595f77;
     letter-spacing: 4px;
     font-weight: lighter;
@@ -160,13 +168,25 @@ button{
 }
 
 .statistic-icon-up {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
     color: #387d77;
     font-style: normal;
 }
 
 .statistic-icon-down {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
     color: #9b4e5d;
     font-style: normal;
+}
+
+.statistic-p {
+    margin-left: 5px;
 }
 
 .overview-title {
