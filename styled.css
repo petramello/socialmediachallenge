@@ -102,7 +102,6 @@ button{
     padding: 20px;
 }
 
-
 .main-box:hover {
    background-color: #333a56;
 }
@@ -130,6 +129,14 @@ button{
 
 .icon {
     margin: 50px auto 5px auto;
+    padding: 10px;
+    color: #595f77;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.icon-overview {
+    margin: 5px auto 5px auto;
     padding: 10px;
     color: #595f77;
     font-style: normal;
@@ -202,14 +209,83 @@ button{
 }
 
 .overview-box-right {
-    display: inline;
-    flex-flow: row wrap;
-    align-self: flex-start;
-    text-align: right;
+    display: flex;
+    flex-flow: column wrap;
+    align-self: flex-end;
+    justify-content: space-around;
 }
 
 .overview-box p {
     color: #595f77;
     font-weight: bolder;
+}
+
+
+@media (max-width: 376px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .menu-header {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 0.8rem;
+    }
+
+    .menu-bar {
+        width: 100%;
+    }
+
+    .menu-mode {
+        display: flex;
+        flex-flow: row wrap;
+        align-self: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-ranking {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    .main-box {
+        display: inline;
+        width: 90%;
+        margin-bottom: 25px;
+        align-items: stretch;
+    }
+
+    .icon {
+        margin: 5px auto 5px auto;
+    }
+
+    .overview-title {
+        font-size: 0.8rem;
+    }
+
+    .overview-div {
+        width: 90%;
+        display: inline;
+        flex-flow: column wrap;
+        align-items: stretch;
+    }
+
+    .overview-box {
+        width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .overview-box-right {
+        display: flex;
+        flex-flow: column wrap;
+        align-self: flex-end;
+        justify-content: space-around;
+    }
+
 }
 
